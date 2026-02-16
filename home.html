@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>PostPilot Clone</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root {
+  --mint: #cfe3df;
+  --beige: #efe4d8;
+  --orange: #ff6a2a;
+  --dark: #1a1a1a;
+  --teal: #1b7f79;
+  --light-gray: #f6f6f6;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  color: var(--dark);
+  line-height: 1.6;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+section {
+  padding: 60px 0;
+}
+
+/* ---------------- NAV ---------------- */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 5%;
+  background: white;
+}
+
+nav .logo {
+  font-weight: 800;
+  font-size: 20px;
+}
+
+nav button {
+  background: var(--orange);
+  border: none;
+  padding: 10px 18px;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+/* ---------------- HERO ---------------- */
+.hero {
+  background: var(--mint);
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.hero h1 {
+  font-size: 36px;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.hero h1 span {
+  color: var(--teal);
+}
+
+.hero p {
+  max-width: 600px;
+  margin: auto;
+  margin-bottom: 25px;
+}
+
+.hero .cta {
+  background: var(--orange);
+  color: white;
+  padding: 14px 28px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* ---------------- TRUST STRIP ---------------- */
+.trust {
+  text-align: center;
+  background: white;
+}
+
+.trust h3 {
+  margin-bottom: 30px;
+}
+
+.logos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  opacity: 0.6;
+}
+
+/* ---------------- METRICS ---------------- */
+.metrics {
+  background: var(--light-gray);
+  text-align: center;
+}
+
+.metric-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.metric h2 {
+  font-size: 40px;
+  color: var(--orange);
+}
+
+.metric p {
+  font-weight: 600;
+}
+
+/* ---------------- VALUE PROP ---------------- */
+.value {
+  background: var(--beige);
+}
+
+.value-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+}
+
+.value h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.value span {
+  color: var(--teal);
+}
+
+/* ---------------- FEATURES ---------------- */
+.features {
+  text-align: center;
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.feature {
+  background: var(--light-gray);
+  padding: 30px;
+  border-radius: 12px;
+}
+
+.feature h4 {
+  margin-bottom: 10px;
+}
+
+/* ---------------- STEPS ---------------- */
+.steps {
+  background: var(--mint);
+  text-align: center;
+}
+
+.step-list {
+  margin-top: 40px;
+  display: grid;
+  gap: 20px;
+}
+
+/* ---------------- TESTIMONIALS ---------------- */
+.testimonials {
+  text-align: center;
+}
+
+.testimonial-grid {
+  display: grid;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.testimonial {
+  background: var(--light-gray);
+  padding: 25px;
+  border-radius: 12px;
+}
+
+/* ---------------- CASE STUDY ---------------- */
+.case-study {
+  background: #e7dff0;
+  text-align: center;
+}
+
+.case-study h2 span {
+  color: var(--teal);
+}
+
+/* ---------------- CTA ---------------- */
+.cta-banner {
+  background: var(--orange);
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.cta-banner a {
+  background: white;
+  color: var(--orange);
+  padding: 14px 28px;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+/* ---------------- BLOG ---------------- */
+.blog {
+  background: var(--light-gray);
+  text-align: center;
+}
+
+.blog-grid {
+  display: grid;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.blog-card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* ---------------- FOOTER ---------------- */
+footer {
+  background: white;
+  padding: 40px 5%;
+  text-align: center;
+  font-size: 14px;
+}
+
+/* ---------------- DESKTOP ---------------- */
+@media(min-width: 768px) {
+
+.hero h1 {
+  font-size: 48px;
+}
+
+.metric-grid {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.value-grid {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.feature-grid {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.step-list {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.testimonial-grid {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.blog-grid {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="logo">PostPilot</div>
+  <button>Book Demo</button>
+</nav>
+
+<section class="hero">
+  <h1>Meet your <span>favorite</span> new (old) marketing channel.</h1>
+  <p>Direct mail that works like crazy for DTC brands.</p>
+  <a href="#" class="cta">Try It Now</a>
+</section>
+
+<section class="trust">
+  <div class="container">
+    <h3>Trusted by thousands of top DTC brands.</h3>
+    <div class="logos">
+      <div>Brand 1</div>
+      <div>Brand 2</div>
+      <div>Brand 3</div>
+      <div>Brand 4</div>
+    </div>
+  </div>
+</section>
+
+<section class="metrics">
+  <div class="container">
+    <h2>Why use direct mail? It works.</h2>
+    <div class="metric-grid">
+      <div class="metric">
+        <h2>28x</h2>
+        <p>Higher Response Rate</p>
+      </div>
+      <div class="metric">
+        <h2>17 Days</h2>
+        <p>Average ROI Time</p>
+      </div>
+      <div class="metric">
+        <h2>85%</h2>
+        <p>Open Rate</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="value">
+  <div class="container">
+    <div class="value-grid">
+      <div>
+        <h2>Powerful acquisition & retention</h2>
+        <p>Send personalized postcards automatically based on real customer behavior.</p>
+      </div>
+      <div>
+        <h2>Fight back against <span>iOS updates</span></h2>
+        <p>Lower CACs and escape spam folders with physical marketing.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="features">
+  <div class="container">
+    <h2>Everything your brand needs</h2>
+    <div class="feature-grid">
+      <div class="feature">
+        <h4>Plug & Play</h4>
+        <p>Integrates with Shopify, Klaviyo, Meta and more.</p>
+      </div>
+      <div class="feature">
+        <h4>Autopilot Campaigns</h4>
+        <p>Trigger sends based on lifecycle events.</p>
+      </div>
+      <div class="feature">
+        <h4>Real-Time ROI</h4>
+        <p>Track revenue and performance instantly.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="steps">
+  <div class="container">
+    <h2>Fast launch. Fast results.</h2>
+    <div class="step-list">
+      <div>01 Segment</div>
+      <div>02 Design</div>
+      <div>03 Send</div>
+      <div>04 Convert</div>
+    </div>
+  </div>
+</section>
+
+<section class="testimonials">
+  <div class="container">
+    <h2>PostPilot is 🔥 for DTC</h2>
+    <div class="testimonial-grid">
+      <div class="testimonial">"Incredible ROI!"</div>
+      <div class="testimonial">"Game changer."</div>
+      <div class="testimonial">"Best acquisition channel."</div>
+      <div class="testimonial">"Highly recommend."</div>
+    </div>
+  </div>
+</section>
+
+<section class="case-study">
+  <div class="container">
+    <h2>How Ow Drives <span>Profits</span> with Postcards</h2>
+    <p>1488% Revenue | 8.5x ROAS | $73k Generated</p>
+  </div>
+</section>
+
+<section class="cta-banner">
+  <h2>Try PostPilot Risk-Free</h2>
+  <a href="#">Book a Demo</a>
+</section>
+
+<section class="blog">
+  <div class="container">
+    <h2>Latest trends & insights</h2>
+    <div class="blog-grid">
+      <div class="blog-card">Low Cost Campaigns</div>
+      <div class="blog-card">Postcard Marketing Guide</div>
+      <div class="blog-card">Using Notes for Ecom</div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  © 2026 PostPilot. All rights reserved.
+</footer>
+
+</body>
+</html>
