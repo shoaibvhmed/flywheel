@@ -25,12 +25,12 @@ export default function Hero() {
             Flywheel is an AI-first marketing agency that helps Orthodontic practices, Real Estate firms, and Interior Design companies drive leads, build predictable pipelines, and generate more revenue.
           </p>
 
-          <div className="mt-10 flex items-center gap-6">
+          <div className="mt-10 flex items-center gap-4">
               <a
               href="#book-call"
               className="inline-block bg-[#FF6A2A] text-white px-10 py-4 rounded-xl font-semibold shadow-[6px_6px_0px_#000] hover:-translate-y-1 transition"
             >
-              Get a FREE audit
+              Get FREE audit
             </a>
 
 

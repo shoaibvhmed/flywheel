@@ -30,9 +30,9 @@ export default function Navbar() {
         <a href="https://www.flyweel.media/" className="flex items-center">
           <Image
             src="/assets/company/logo.svg"
-            alt="Flywheel"
-            width={240}
-            height={80}
+            alt="Flywheel media logo"
+            width={180}
+            height={60}
             priority
           />
         </a>
@@ -55,11 +55,18 @@ export default function Navbar() {
         {/* CTA */}
         <div className="flex items-center gap-4">
           <a
-            href="#book-call"
-            className="inline-block bg-[#FF6A2A] text-white px-10 py-4 rounded-xl font-semibold shadow-[6px_6px_0px_#000] hover:-translate-y-1 transition"
-          >
-            Free Marketing Audit
-          </a>
+          href="#book-call"
+          className="inline-block bg-[#FF6A2A] text-white 
+          px-6 py-2.5 md:px-10 md:py-3 
+          text-sm md:text-base 
+          rounded-xl 
+          font-semibold 
+          shadow-[4px_4px_0px_#000] md:shadow-[6px_6px_0px_#000] 
+          hover:-translate-y-1 transition 
+          whitespace-nowrap"
+        >
+          Get Free Audit
+        </a>
         </div>
 
       </div>
