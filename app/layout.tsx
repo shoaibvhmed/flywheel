@@ -1,8 +1,3 @@
-import "./globals.css";
-import { Inter } from "next/font/google";
-
-const inter = Inter({ subsets: ["latin"] });
-
 export const metadata = {
   title: "AI-first Marketing That Drives Revenue - Flywheel Media",
   description:
@@ -16,7 +11,7 @@ export const metadata = {
     siteName: "Flywheel Media",
     images: [
       {
-        url: "/company/banner.png", // 👈 your image
+        url: "https://www.flyweel.media/assets/company/banner.png", // ✅ FIXED
         width: 1200,
         height: 630,
         alt: "Flywheel Marketing Banner image",
@@ -30,18 +25,6 @@ export const metadata = {
     title: "Flywheel Media",
     description:
       "AI-first marketing agency for predictable growth.",
-    images: ["/assets/company/banner.png"],
+    images: ["https://www.flyweel.media/assets/company/banner.png"], // ✅ FIXED
   },
 };
-
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
-  return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
-    </html>
-  );
-}
