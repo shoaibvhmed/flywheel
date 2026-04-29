@@ -1,4 +1,5 @@
 export const metadata = {
+  metadataBase: new URL("https://www.flyweel.media"),
   title: "AI-first Marketing That Drives Revenue - Flywheel Media",
   description:
     "Flywheel is an AI-first marketing agency helping orthodontic practices, real estate firms, and interior design brands generate leads and predictable growth.",
