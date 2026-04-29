@@ -16,7 +16,7 @@ export const metadata = {
     siteName: "Flywheel Media",
     images: [
       {
-        url: "/assets/company/banner.png", // 👈 your image
+        url: "/company/banner.png", // 👈 your image
         width: 1200,
         height: 630,
         alt: "Flywheel Marketing Banner image",
