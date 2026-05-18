@@ -19,7 +19,7 @@ export const metadata = {
     siteName: "Flywheel Media",
     images: [
       {
-        url: "/assets/company/banner.png",
+        url: "/assets/company/banner.jpg",
         width: 1200,
         height: 630,
         alt: "Flywheel Media",
@@ -34,7 +34,7 @@ export const metadata = {
     title: "Flywheel Media",
     description:
       "AI-powered marketing that drives leads, pipelines, and revenue.",
-    images: ["/assets/company/banner.png"],
+    images: ["/assets/company/banner.jpg"],
   },
 };
 
