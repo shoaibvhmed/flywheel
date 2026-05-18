@@ -7,9 +7,9 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata = {
   metadataBase: new URL("https://www.flyweel.media"),
 
-  title: "Flywheel Media",
+  title: "Flywheel Media - Best Digital Marketing Agency in Chennai",
   description:
-    "AI-powered marketing that drives leads, pipelines, and revenue.",
+    "AI-powered marketing that drives leads, pipelines, and revenue. Get a free marketing audit today",
 
   openGraph: {
     title: "Flywheel Media",
