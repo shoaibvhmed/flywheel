@@ -1,8 +1,15 @@
+// @ts-ignore: CSS module declarations may not be present in this project setup
+import "./globals.css";
+import { Inter } from "next/font/google";
+
+const inter = Inter({ subsets: ["latin"] });
+
 export const metadata = {
   metadataBase: new URL("https://www.flyweel.media"),
-  title: "AI-first Marketing That Drives Revenue - Flywheel Media",
+
+  title: "Flywheel Media",
   description:
-    "Flywheel is an AI-first marketing agency helping orthodontic practices, real estate firms, and interior design brands generate leads and predictable growth.",
+    "AI-powered marketing that drives leads, pipelines, and revenue.",
 
   openGraph: {
     title: "Flywheel Media",
@@ -12,12 +19,13 @@ export const metadata = {
     siteName: "Flywheel Media",
     images: [
       {
-        url: "https://www.flyweel.media/assets/company/banner.png", // ✅ FIXED
+        url: "/assets/company/banner.png",
         width: 1200,
         height: 630,
-        alt: "Flywheel Marketing Banner image",
+        alt: "Flywheel Media",
       },
     ],
+    locale: "en_US",
     type: "website",
   },
 
@@ -25,7 +33,19 @@ export const metadata = {
     card: "summary_large_image",
     title: "Flywheel Media",
     description:
-      "AI-first marketing agency for predictable growth.",
-    images: ["https://www.flyweel.media/assets/company/banner.png"], // ✅ FIXED
+      "AI-powered marketing that drives leads, pipelines, and revenue.",
+    images: ["/assets/company/banner.png"],
   },
 };
+
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
+  return (
+    <html lang="en">
+      <body className={inter.className}>{children}</body>
+    </html>
+  );
+}
