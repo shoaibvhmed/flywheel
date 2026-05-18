@@ -12,11 +12,11 @@ export const metadata = {
     "AI-powered marketing that drives leads, pipelines, and revenue. Get a free marketing audit today",
 
   openGraph: {
-    title: "Flywheel Media",
+    title: "Flywheel Media - Best Digital Marketing Agency in Chennai",
     description:
-      "AI-powered marketing that drives leads, pipelines, and revenue.",
+      "AI-powered marketing that drives leads, pipelines, and revenue. Get a free marketing audit today",
     url: "https://www.flyweel.media",
-    siteName: "Flywheel Media",
+    siteName: "Flywheel Media - Best Digital Marketing Agency in Chennai",
     images: [
       {
         url: "/assets/company/banner.jpg",
@@ -31,9 +31,9 @@ export const metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Flywheel Media",
+    title: "Flywheel Media - Best Marketing Agency in Chennai",
     description:
-      "AI-powered marketing that drives leads, pipelines, and revenue.",
+      "AI-powered marketing that drives leads, pipelines, and revenue. Get a free marketing audit today",
     images: ["/assets/company/banner.jpg"],
   },
 };
